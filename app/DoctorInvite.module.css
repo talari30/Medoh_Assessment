@@ -1,0 +1,148 @@
+/* DoctorInvite.module.css */
+
+.container {
+    max-width: 640px;
+    margin: 2.5rem auto;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: black;
+  }
+  
+  .heading {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .label {
+    font-weight: 500;
+    font-size: 1.125rem;
+  }
+  
+  .input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.125rem;
+    background-color: #2563eb;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .button:disabled {
+    background-color: #9ca3af;
+  }
+  
+  .successMessage {
+    margin-top: 1rem;
+    color: #16a34a;
+    font-weight: 500;
+  }
+  
+  .errorMessage {
+    margin-top: 1rem;
+    color: #dc2626;
+    font-weight: 500;
+  }
+  
+  .bulkSection {
+    margin-top: 2.5rem;
+  }
+  
+  .bulkHeading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .bulkInfo {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+  }
+  
+  .csvLoaded {
+    color: #16a34a;
+    margin-bottom: 0.5rem;
+  }
+  
+  .bulkResults {
+    margin-top: 1.5rem;
+  }
+  
+  .resultList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .resultItem {
+    border: 1px solid #d1d5db;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+  }
+  
+  .resultSuccess {
+    color: #16a34a;
+  }
+  
+  .resultError {
+    color: #dc2626;
+  }
+  
+  .loaderOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  
+  .loaderSpinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #2563eb;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
